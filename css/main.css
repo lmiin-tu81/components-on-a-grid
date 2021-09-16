@@ -16,7 +16,20 @@ img {
 }
 
 header {
-  display: contents;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+header img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+h1 {
+  grid-column: 1 ;
+  grid-row: 3;
+  z-index: 1;
 }
 
 ul {
@@ -29,7 +42,7 @@ a {
 }
 
 body {
-  margin: 0;
+  margin: 1rem;
 }
 
 h2 {
@@ -39,6 +52,7 @@ h2 {
 
 p {
   font-family: "Georgia", serif;
+  margin-top: 0;
 }
 
 main {
@@ -46,8 +60,12 @@ main {
   grid-gap: 1rem;
 }
 
-figure > img {
+figure {
+  margin: 0;
+}
 
+h2 {
+  margin-bottom: 0;
 }
 
 .logo {
