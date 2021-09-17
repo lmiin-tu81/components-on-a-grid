@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "Patua One", serif;
+  font-family: Georgia, serif;
   line-height: 1.5;
   background-color: #f2f1ed;
 }
@@ -16,56 +16,40 @@ img {
 }
 
 header {
+  display: contents;
+}
+
+body {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  margin: 0;
 }
 
-header img {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-}
-
-h1 {
-  grid-column: 1 ;
-  grid-row: 3;
-  z-index: 1;
+li {
+  display: inline;
+  font-size: 2rem;
+  font-family: "Patua One", sans-serif;
 }
 
 ul {
   list-style-type: none;
+  padding-left: 0;
+  font-size: 2rem;
 }
 
 a {
   color: #fff;
-  text-size: 2rem;
-}
-
-body {
-  margin: 1rem;
+  font-size: 2rem;
 }
 
 h2 {
   color: #30658d;
-  text-size: 2rem;
+  font-size: 2rem;
+  margin-bottom: 0;
+  font-family: "Patua One", sans-serif;
 }
 
 p {
-  font-family: "Georgia", serif;
   margin-top: 0;
-}
-
-main {
-  display: flex;
-  grid-gap: 1rem;
-}
-
-figure {
-  margin: 0;
-}
-
-h2 {
-  margin-bottom: 0;
 }
 
 .logo {
